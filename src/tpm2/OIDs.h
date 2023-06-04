@@ -274,6 +274,21 @@ MAKE_OID(_ECC_SM2_P256);    // Don't know where I found this OID. It needs check
 #if ECC_BN_P256
 #define OID_ECC_BN_P256     NULL
 #endif // ECC_BN_P256
+#define OID_ECC_BP_P256_R1_VALUE    0x06, 0x09, 0x2B, 0x24, 0x03, 0x03, 0x02, 0x08, \
+	0x01, 0x01, 0x07
+#if ECC_BP_P256_R1
+MAKE_OID(_ECC_BP_P256_R1);	// (1.3.36.3.3.2.8.1.1.7)
+#endif // ECC_BP_P256_R1
+#define OID_ECC_BP_P384_R1_VALUE    0x06, 0x09, 0x2B, 0x24, 0x03, 0x03, 0x02, 0x08, \
+	0x01, 0x01, 0x0B
+#if ECC_BP_P384_R1
+MAKE_OID(_ECC_BP_P384_R1);	// (1.3.36.3.3.2.8.1.1.11)
+#endif // ECC_BP_P384_R1
+#define OID_ECC_BP_P512_R1_VALUE    0x06, 0x09, 0x2B, 0x24, 0x03, 0x03, 0x02, 0x08, \
+	0x01, 0x01, 0x0D
+#if ECC_BP_P512_R1
+MAKE_OID(_ECC_BP_P512_R1);	// (1.3.36.3.3.2.8.1.1.13)
+#endif // ECC_BP_P512_R1
 #endif // ALG_ECC
 // #undef MAKE_OID
 #define OID_SIZE(OID)   (OID[1] + 2)

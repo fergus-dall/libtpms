@@ -169,6 +169,9 @@ typedef UINT16              TPM_ECC_CURVE;
 #define TPM_ECC_BN_P256     (TPM_ECC_CURVE)(0x0010)
 #define TPM_ECC_BN_P638     (TPM_ECC_CURVE)(0x0011)
 #define TPM_ECC_SM2_P256    (TPM_ECC_CURVE)(0x0020)
+#define TPM_ECC_BP_P256_R1  (TPM_ECC_CURVE)(0x0030)
+#define TPM_ECC_BP_P384_R1  (TPM_ECC_CURVE)(0x0031)
+#define TPM_ECC_BP_P512_R1  (TPM_ECC_CURVE)(0x0032)
 
 /* TPM 2.0 Part 2: Table 2:12 - Definition of TPM_CC Constants */
 typedef UINT32                              TPM_CC;

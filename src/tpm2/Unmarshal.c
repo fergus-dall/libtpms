@@ -216,6 +216,9 @@ TPM_ECC_CURVE_Unmarshal(TPM_ECC_CURVE *target, BYTE **buffer, INT32 *size)
 	  case TPM_ECC_BN_P256:
 	  case TPM_ECC_BN_P638:
 	  case TPM_ECC_SM2_P256:
+	  case TPM_ECC_BP_P256_R1:
+	  case TPM_ECC_BP_P384_R1:
+	  case TPM_ECC_BP_P512_R1:
 	    break;
 	  default:
 	    rc = TPM_RC_CURVE;
@@ -3783,6 +3786,15 @@ TPMI_ECC_CURVE_Unmarshal(TPMI_ECC_CURVE *target, BYTE **buffer, INT32 *size)
 #endif
 #if ECC_SM2_P256
 	  case TPM_ECC_SM2_P256:
+#endif
+#if ECC_BP_P256_R1
+	  case TPM_ECC_BP_P256_R1:
+#endif
+#if ECC_BP_P384_R1
+	  case TPM_ECC_BP_P384_R1:
+#endif
+#if ECC_BP_P512_R1
+	  case TPM_ECC_BP_P512_R1:
 #endif
           if (!CryptEccIsCurveRuntimeUsable(*target))
               rc = TPM_RC_CURVE;

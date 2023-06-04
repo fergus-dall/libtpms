@@ -146,6 +146,15 @@
 #ifndef ECC_SM2_P256
 #define ECC_SM2_P256                    YES /* libtpms enabled */
 #endif
+#ifndef ECC_BP_P256_R1
+#define ECC_BP_P256_R1                  YES /* libtpms enabled */
+#endif
+#ifndef ECC_BP_P384_R1
+#define ECC_BP_P384_R1                  YES /* libtpms enabled */
+#endif
+#ifndef ECC_BP_P512_R1
+#define ECC_BP_P512_R1                  YES /* libtpms enabled */
+#endif
 
 /* Table 0:6 - Defines for Implemented ACT */
 
